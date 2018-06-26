@@ -1,10 +1,8 @@
-<div class="football-info">
-  <div class="football-header">
-    <span>Home</span>
-    <span>Away</span>
-  </div>
-  <div class="football-item">
-    <span>{{ matchInfo.home.score }}</span>
-    <span>{{ matchInfo.away.score }}</span>
+Football Brackets
+<div class="football-info flex-container-rw">
+  <div class="flex-container-col" *ngFor="let i of matchesPerLevel">
+    <div *ngFor='let match of i'>
+      <button style="margin:35px; min-width:150px;">{{match.winner.name}}</button>
+    </div>
   </div>
 </div>

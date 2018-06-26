@@ -21,22 +21,26 @@ const team4: Team = {
 
 const quarterFinal1: Match<FootballInfo> = {
   seedMatches: [],
-  winner: team1
+  winner: team1,
+  id:6
 };
 
 const quarterFinal2: Match<FootballInfo> = {
   seedMatches: [],
-  winner: team2
+  winner: team2,
+  id:5
 };
 
 const quarterFinal3: Match<FootballInfo> = {
   seedMatches: [],
-  winner: team3
+  winner: team3,
+  id:4
 };
 
 const quarterFinal4: Match<FootballInfo> = {
   seedMatches: [],
-  winner: team4
+  winner: team4,
+  id:3
 };
 
 const semiFinal1: Match<FootballInfo> = {
@@ -57,7 +61,8 @@ const semiFinal1: Match<FootballInfo> = {
       touchDowns: 1,
       fieldGoals: 1,
     }
-  }
+  },
+  id:2
 };
 
 const semiFinal2: Match<FootballInfo> = {
@@ -78,13 +83,15 @@ const semiFinal2: Match<FootballInfo> = {
       touchDowns: 1,
       fieldGoals: 1,
     }
-  }
+  },
+  id:1
 };
 
 export const footballMatch: Match<FootballInfo> = {
   seedMatches: [
     semiFinal1,
-    semiFinal2
+    semiFinal2,
+    quarterFinal1
   ],
   winner: team1,
   matchInfo: {
@@ -99,5 +106,6 @@ export const footballMatch: Match<FootballInfo> = {
       touchDowns: 1,
       fieldGoals: 1,
     }
-  }
+  },
+  id : 0
 };
